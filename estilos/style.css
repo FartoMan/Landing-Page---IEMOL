@@ -372,6 +372,11 @@ section#profs h3::first-letter {
     font-size: 1.2em;
 }
 
+
+h3 span {
+    font-size: 1.2em;
+}
+
 section#profs article div.direcao div.imagens {
     width: 50%;
     background-color: aquamarine;
@@ -501,6 +506,40 @@ section#paisprofs .texto p {
     font-size: 1.2em;
     line-height: 1.8em;
     margin-bottom: 20px;
+}
+
+/*
+==============
+    FOOTER
+==============
+*/
+
+footer {
+    text-align: center;
+}
+footer h2 {
+    margin: 10px 5px 5px 5px;
+}
+footer h3 {
+    font-size: .9em;
+    margin-bottom: 10px;
+}
+footer p {
+    margin-bottom: 15px;
+}
+footer p a {
+    color: black;
+    font-weight: bold;
+}
+footer #cgr {
+    background-color: black;
+    color: #FFF;
+    margin-bottom: 0;
+}
+footer #cgr a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 /*
