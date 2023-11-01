@@ -1,0 +1,244 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 768px) {
+
+/*
+    CONFIG. GERAL
+*/
+
+
+html {
+    width: 100vw;
+}
+
+body {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+main > section {
+    width: 400px;
+    padding: 0 0;
+}
+
+/*
+==============
+    HEADER
+==============
+*/
+
+/*-----------------------
+  \\VvWvV//  LOGO  \\VvWvV//  
+ ------------------------*/
+
+#menu-content .logo {
+    width: 50%;
+}
+#menu-content 
+
+/*-----------------------
+ \\VvWvV// MENU \\VvWvV//
+ ------------------------*/
+nav.menu {
+    width: 50%;
+    position: relative;
+    overflow: visible;
+    display: block;
+}
+
+#itens {
+    display: none;
+
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 50vw;
+    height: 100vh;
+
+    background-color: #FBB03B;
+}
+
+i#burger {
+    display: block;
+    background-color: #c27801;
+    padding: 5px;
+    border-radius: 5px;;
+
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*
+=======================
+    SESSÃO 1 - HOME
+=======================
+*/
+
+section#home {
+    width: 100vw;
+}
+
+section#home h2 {
+    
+}
+section#home .texto {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+/*
+=========================
+    SESSÃO 2 - TURMAS
+=========================
+*/
+
+section#turmas {
+    height: 950px;
+}
+
+section#turmas div.btns {
+    flex-direction: column;
+}
+
+section#turmas div.btns button {
+    margin: 7px 0;
+}
+
+section#turmas div.imagens {
+    background-color: white;
+    width: 350px;
+}
+.imgs-trm {
+    background-color: transparent;
+}
+section#turmas div.imagens img {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+
+    border: 5px solid #FBB03B;
+    border-width: 3px 7px 7px 3px;
+}
+
+/*
+========================================
+    SESSÃO 3 - PROFESSORES E DIREÇÃO
+========================================
+*/
+
+section#profs {
+    height: 1400px;
+}
+section#profs .txtdirecao p {
+    width: 90%;
+}
+
+section#profs article {
+    flex-direction: column;
+    max-width: 400px;
+
+    background-image: none;
+    border: none;
+}
+
+section#profs article .direcao,
+section#profs article .profs {
+    width: 100%;
+    padding: 0;
+    flex-direction: column;
+    opacity: 1;
+}
+section#profs article .profs {
+    margin-top: 20px;
+    flex-direction: column-reverse;
+}
+
+section#profs article div.direcao div.imagens {
+    width: 100%;
+    height: 300px;
+}
+section#profs article div.direcao div.texto, 
+section#profs article div.profs div.texto {
+    width: 95%;
+    margin: 7px auto;
+}
+section#profs article div.profs div.imagens {
+    width: 100%;
+    height: 300px;
+}
+
+/*
+=========================
+    SESSÃO 4 - IEMOL
+=========================
+*/
+
+section#iemol {
+    height: 1100px;
+}
+section#iemol article {
+    max-width: 400px;
+}
+section#iemol .img-entrada img {
+    height: 600px;
+    background-position: -375px;
+}
+
+section#iemol .imgs-extra div {
+    width: 120px;
+    height: 90px;
+}
+
+
+/*
+=======================
+    SESSÃO 5 - PAIS
+=======================
+*/
+
+section#paisprofs {
+    height: 1100px;
+}
+
+section#paisprofs article {
+    flex-direction: column;
+}
+
+section#paisprofs .ppimg{
+    width: 315px;
+    height: 315px;
+}
+section#paisprofs .ppimg .img {
+    width: 300px;
+    height: 300px;
+}
+section#paisprofs .texto {
+    margin: 15px 0 0 0;
+    padding: 0 10px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+footer h2 {
+    margin: 10px 5px 5px 5px;
+}
+footer h3 {
+    font-size: .9em;
+    margin-bottom: 10px;
+}
+footer p {
+    margin-bottom: 15px;
+}
+/*
+===============================
+    BOTÃO PARA O FORMULÁRIO
+===============================
+*/
+
+}
