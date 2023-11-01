@@ -97,9 +97,11 @@ section#home .texto {
 */
 
 section#turmas {
-    height: 950px;
+    height: 1050px;
 }
-
+section#turmas .texto p {
+    padding: 0 10px;
+}
 section#turmas div.btns {
     flex-direction: column;
 }
@@ -110,14 +112,15 @@ section#turmas div.btns button {
 
 section#turmas div.imagens {
     background-color: white;
+    height: 500px;
     width: 350px;
 }
 .imgs-trm {
     background-color: transparent;
 }
 section#turmas div.imagens img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     margin: auto;
 
     border: 5px solid #FBB03B;
@@ -187,7 +190,14 @@ section#iemol .img-entrada img {
     height: 600px;
     background-position: -375px;
 }
-
+section#iemol .texto p {
+    padding: 0 10px;
+}
+section#iemol .imgs-extra {
+    width: 100%;
+    dispaly: flex;
+    justify-content: space-around;
+}
 section#iemol .imgs-extra div {
     width: 120px;
     height: 90px;
