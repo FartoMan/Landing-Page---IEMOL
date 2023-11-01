@@ -290,7 +290,7 @@ section#turmas div.imagens img {
     background-image: url(../imagens/prof-sala1.jpg);
 }
 #qdr3 img:nth-child(2) {
-    background-image: url(../imagens/_MG_0018.jpg);
+    background-image: url(../imagens/MG_0018.jpg);
 }
 /*
 ========================================
@@ -442,13 +442,13 @@ section#iemol .imgs-extra div {
     height: 233px;
 }
 section#iemol .imgs-extra div:nth-child(1) {
-    background-image: url(../imagens/_MG_0018.jpg);
+    background-image: url(../imagens/MG_0018.jpg);
 }
 section#iemol .imgs-extra div:nth-child(2) {
-    background-image: url(../imagens/_MG_0078.jpg);
+    background-image: url(../imagens/MG_0078.jpg);
 }
 section#iemol .imgs-extra div:nth-child(3) {
-    background-image: url(../imagens/_MG_0051.jpg);
+    background-image: url(../imagens/MG_0051.jpg);
 }
 
 /*
