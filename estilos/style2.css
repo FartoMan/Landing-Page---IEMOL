@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Rabisco';
+    src: url(../fontes/KGBrokenVesselsSketch.ttf);
+}
+
+/*    Resetar as margens   */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+    body
+*/
+body {
+    width: 100%;
+}
+
+/*
+    Header
+*/
+header {
+    display: none;
+}
+
+/*
+    Header - Menu
+*/
+
+/*
+    Main
+*/
+
+/*
+    Main - #home
+*/
+#home {
+    height: 100vh;
+    position: relative;
+    
+    overflow: hidden;
+}
+
+#home .cxM {
+    padding-top: 100px;
+}
+
+#home h1 {
+    font-family: 'Rabisco';
+    font-size: 2.5em;
+    font-weight: normal;
+    color: #04A7E8;
+
+    padding-left: 15px;
+}
+#home h1 span {
+    color: red;
+    font-size: 1.25em;
+}
+
+#home .logo img {
+    position: absolute;
+    top: 50vh;
+    left: 10%;
+    border-radius: 20px;
+    box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.466);
+    opacity: .6;
+}
+
+#home img.menina {
+    position: fixed;
+    bottom: 19vh;
+    left: 7%;
+    border-radius: 50%;
+    filter: drop-shadow(3px 5px 3px rgba(0, 0, 0, 0.541));
+}
+@media screen and (max-height: 774px) {
+    #home img.menina {
+        left: 13%;
+        bottom: 10vh;
+    }
+}
+
+#home div.form {
+    position: absolute;
+    bottom:-60vh;
+    left: -50vh;
+    
+    height: 90vh;
+    width: 90vh;
+    background-color: #04A7E8;
+    border-radius: 50%;
+
+    box-shadow: -3px -3px 10px 1px rgba(0, 0, 0, 0.625);
+}
+#home div.form a {
+    position: absolute;
+    left: 61vh;
+    top: 15%;
+
+    
+    font-size: 2em;
+    transform: scale(3.5) rotate(-8deg);
+
+    text-decoration: none;
+    color: white;
+}
+
+#home .bola-btn {
+    position: absolute;
+    bottom:-50vh;
+    right: -60vh;
+    
+    height: 90vh;
+    width: 90vh;
+    background-color: orange;
+    border-radius: 50%;
+
+    box-shadow: -3px -3px 10px 1px rgba(0, 0, 0, 0.625);
+}
+#home .bola-btn a {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    transform: rotate(10deg);
+
+    font-family: 'Rabisco';
+    font-size: 12em;
+    text-align: right;
+    text-transform: uppercase;
+
+    text-decoration: none;
+    color: red;
+
+}
