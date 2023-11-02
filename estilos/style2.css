@@ -65,9 +65,9 @@ header {
 
 
 #home img.menina {
-    position: fixed;
-    bottom: 19vh;
-    left: 7%;
+    position: absolute;
+    bottom: 17vh;
+    left: 12%;
     border-radius: 50%;
     filter: drop-shadow(3px 5px 3px rgba(0, 0, 0, 0.541));
     z-index: -1;
@@ -79,8 +79,10 @@ header {
     }
 }
 
+/* BOTÃO - FORM */
 #home div.form {
     position: absolute;
+
     bottom:-60vh;
     left: -50vh;
     
@@ -88,25 +90,64 @@ header {
     width: 90vh;
     background-color: #04A7E8;
     border-radius: 50%;
-
-    box-shadow: -3px -3px 10px 1px rgba(0, 0, 0, 0.625);
-}
-#home div.form a {
-    position: absolute;
-    left: 61vh;
-    top: 15%;
-
     
+    box-shadow: -3px -3px 10px 1px rgba(0, 0, 0, 0.625);
+
+    overflow: hidden;
+}
+#home div.form .btns {
+    position: absolute;
+    right: 30%;
+    height: 100%;
+    width: 10px;
+    background-color: aliceblue;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+@media screen and (min-height: 774px) {
+    #home div.form .btns {
+        right: 35%;
+    }
+}
+#home div.form a.form-link {
+    text-align: center;
+    margin-top: 30px;
+
     font-size: 2em;
     transform: scale(3.5) rotate(-8deg);
 
     text-decoration: none;
     color: white;
+    text-shadow: -2px -1px 3px black;
+}
+#home div.form a.form-link > p {
+    position: absolute;
+    bottom: 6%;
+    left: -1vw;
+    font-family: 'Rabisco';
+    font-size: .4rem;
+    font-weight: normal;
+}
+#home .logo {
+    margin-top: 45px;
+    transform: rotate(-8deg);
+
+    z-index: 1;
+}
+#home .logo img {
+    border-radius: 20px;
+    box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.466);
+}
+#home div.btn-contato a img {
 }
 
+/* BOTÃO - SAIBA MAIS */
 #home .bola-btn {
     position: absolute;
-    bottom:-50vh;
+    bottom: -50vh;
     right: -60vh;
     
     height: 90vh;
@@ -115,16 +156,16 @@ header {
     border-radius: 50%;
 
     box-shadow: -3px -3px 10px 1px rgba(0, 0, 0, 0.625);
+
+    overflow: hidden;
 }
-#home .logo img {
+#home .img-porta {
     position: absolute;
-    top: 32vh;
-    left: 10%;
-    border-radius: 20px;
-    box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.466);
-    opacity: .6;
+    left: -55vw;
+    top: 22vh;
+    z-index: 0;
 }
-#home .bola-btn p {
+#home .bola-btn p { /* ?  ?  ? */
     position: absolute;
     top: 10%;
     left: 15%;
@@ -137,7 +178,9 @@ header {
 
     text-decoration: none;
     color: red;
-    text-shadow: 2px -5px 1px rgba(132, 175, 255, 0.315);
+    text-shadow: 3px -3px 7px black;
+
+    z-index: 2;
 }
 
 /*
