@@ -41,7 +41,8 @@ header {
     height: 100vh;
     position: relative;
     
-    overflow: hidden;
+    overflow-x: hidden;
+
 }
 
 #home .cxM {
@@ -61,14 +62,7 @@ header {
     font-size: 1.25em;
 }
 
-#home .logo img {
-    position: absolute;
-    top: 50vh;
-    left: 10%;
-    border-radius: 20px;
-    box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.466);
-    opacity: .6;
-}
+
 
 #home img.menina {
     position: fixed;
@@ -76,6 +70,7 @@ header {
     left: 7%;
     border-radius: 50%;
     filter: drop-shadow(3px 5px 3px rgba(0, 0, 0, 0.541));
+    z-index: -1;
 }
 @media screen and (max-height: 774px) {
     #home img.menina {
@@ -121,7 +116,15 @@ header {
 
     box-shadow: -3px -3px 10px 1px rgba(0, 0, 0, 0.625);
 }
-#home .bola-btn a {
+#home .logo img {
+    position: absolute;
+    top: 32vh;
+    left: 10%;
+    border-radius: 20px;
+    box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.466);
+    opacity: .6;
+}
+#home .bola-btn p {
     position: absolute;
     top: 10%;
     left: 15%;
@@ -134,5 +137,14 @@ header {
 
     text-decoration: none;
     color: red;
+    text-shadow: 2px -5px 1px rgba(132, 175, 255, 0.315);
+}
 
+/*
+    Sessão 2 - IEMOL
+*/
+
+#iemol {
+    height: 100vh;
+    background-color: greenyellow;
 }
