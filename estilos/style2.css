@@ -42,7 +42,6 @@ header {
     position: relative;
     
     overflow-x: hidden;
-
 }
 
 #home .cxM {
@@ -70,7 +69,7 @@ header {
     left: 12%;
     border-radius: 50%;
     filter: drop-shadow(3px 5px 3px rgba(0, 0, 0, 0.541));
-    z-index: -1;
+    z-index: 0;
 }
 @media screen and (max-height: 774px) {
     #home img.menina {
@@ -91,9 +90,11 @@ header {
     background-color: #04A7E8;
     border-radius: 50%;
     
-    box-shadow: -3px -3px 10px 1px rgba(0, 0, 0, 0.625);
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.625);
 
     overflow: hidden;
+
+    z-index: 1;
 }
 #home div.form .btns {
     position: absolute;
@@ -158,6 +159,8 @@ header {
     box-shadow: -3px -3px 10px 1px rgba(0, 0, 0, 0.625);
 
     overflow: hidden;
+
+    z-index: 2;
 }
 #home .img-porta {
     position: absolute;
@@ -182,6 +185,28 @@ header {
 
     z-index: 2;
 }
+#home .smdiv {
+    position: absolute;
+    bottom: -63vh;
+    height: 300px;
+    width: 100%;
+    background-color: orange;
+
+    z-index: 0;
+}
+#home .smdiv p {
+    position: absolute;
+    left: 50%;
+    bottom: 3.1vh;
+
+    font-family: 'Rabisco';
+    font-size: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+}
+#home .smdiv p span {
+    font-size: 2.5em;
+}
 
 /*
     Sessão 2 - IEMOL
@@ -189,5 +214,29 @@ header {
 
 #iemol {
     height: 100vh;
-    background-color: greenyellow;
+    background-image: linear-gradient(to bottom, orange, transparent);
+}
+#iemol .esp {
+    width: 100%;
+    margin-bottom: 3vh;
+}
+#iemol .esp:first-child {
+    padding-top: 5vh;
+}
+#iemol .esp:last-child {
+    margin-bottom: 0;
+}
+#iemol .esp h3 {
+    text-align: center;
+    margin-bottom: 15px;
+
+    font-size: 2em;
+    font-family: 'Rabisco';
+    font-weight: normal;
+}
+#iemol .esp img {
+    display: block;
+    width: 375px;
+    margin: auto;
+    border-radius: 20px;
 }
