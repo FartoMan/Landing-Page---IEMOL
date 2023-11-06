@@ -307,10 +307,25 @@ header {
 #onde .mapa {
     height: 80%;
     background-color: orange;
-}
-#onde .mapa .imapa {
-
+    padding: 15px 0;
+    margin: auto;
+    border-radius: 20px;
 }
 #onde .mapa .endereco {
+    text-align: center;
+    font-family: 'Playpen Sans', cursive;
+    font-size: 1.2em;
+    margin: 15px 10px;
+}
+#onde .mapa .endereco span {
+    transform: scale(1.5);
+}
+#onde .mapa .imapa {
+    text-align: center;
+}
+#onde .mapa .imapa iframe {
+    border-radius: 20px;
+    box-shadow: 3px 0 5px black;
     
+    overflow: hidden;
 }
