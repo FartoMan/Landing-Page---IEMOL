@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap');
+
 @font-face {
     font-family: 'Rabisco';
     src: url(../fontes/KGBrokenVesselsSketch.ttf);
@@ -213,7 +215,6 @@ header {
 */
 
 #iemol {
-    height: 100vh;
     background-image: linear-gradient(to bottom, orange, transparent);
 }
 #iemol .esp {
@@ -233,10 +234,83 @@ header {
     font-size: 2em;
     font-family: 'Rabisco';
     font-weight: normal;
+    letter-spacing: 2px;
+
+    color: white;
+    text-shadow: 0px 0px 3px black;
 }
 #iemol .esp img {
     display: block;
     width: 375px;
     margin: auto;
     border-radius: 20px;
+}
+
+/*
+    BOTÃO PARA O FORMULÁRIO entre sessões
+*/
+
+#btn-form {
+    background-color: #04A7E8;
+    height: 100px;
+
+    margin: 20px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btn-form a {
+    text-decoration: none;
+    color: blue;
+    font-family: 'Rabisco';
+    font-size: 2em;
+    text-shadow: 0 0 2px white;
+}
+
+/*
+    Sessão 3 - Equipe
+*/
+
+#equipe {
+    overflow-x: hidden;
+}
+#equipe .txt p {
+    text-align: center;
+    font-family: 'Playpen Sans', cursive;
+    font-size: 1.2em;
+    margin: 15px 10px;
+}
+#equipe .txt h3 {
+    text-align: center;
+    margin-bottom: 15px;
+
+    font-size: 2em;
+    font-family: 'Rabisco';
+    font-weight: normal;
+}
+#equipe .imgs img {
+    display: block;
+    width: 375px;
+    border-radius: 20px;
+    margin: 10px auto;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.342);
+}
+
+/*
+    Sessão 4 - Onde
+*/
+
+#onde {
+    height: 100vh;
+}
+#onde .mapa {
+    height: 80%;
+    background-color: orange;
+}
+#onde .mapa .imapa {
+
+}
+#onde .mapa .endereco {
+    
 }
