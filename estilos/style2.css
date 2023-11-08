@@ -517,6 +517,10 @@ footer .infos h4 {
 footer .infos p {
     margin-bottom: 10px;
 }
+footer .infos a {
+    color: white;
+    font-weight: bold;
+}
 
 footer .rights {
     
