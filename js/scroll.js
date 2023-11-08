@@ -29,3 +29,10 @@ $("#mater").click(function() {
 $("#fund").click(function() {
     $("#fundTxt").fadeToggle();
 })
+
+$("#btnEq1").click(function() {
+    $("#eqContent1").fadeToggle();
+})
+$("#btnEq2").click(function() {
+    $("#eqContent2").fadeToggle();
+})
