@@ -46,37 +46,40 @@ header {
     overflow-x: hidden;
 }
 
-#home .cxM {
-    padding-top: 100px;
+#home .camp {
+    padding-top: 45px;
+    text-align: center;
 }
 
-#home h1 {
+#home .camp h1 {
     font-family: 'Rabisco';
     font-size: 2.5em;
     font-weight: normal;
     color: #04A7E8;
-
-    padding-left: 15px;
 }
 #home h1 span {
     color: red;
     font-size: 1.25em;
+}
+#home .camp h2 {
+    margin-top: 30px;
+    font-family: 'Playpen Sans', cursive;
 }
 
 
 
 #home img.menina {
     position: absolute;
-    bottom: 17vh;
-    left: 12%;
+    bottom: 15vh;
+    left: 50%;
+    transform: translate(-50%);
     border-radius: 50%;
     filter: drop-shadow(3px 5px 3px rgba(0, 0, 0, 0.541));
     z-index: 0;
 }
 @media screen and (max-height: 774px) {
     #home img.menina {
-        left: 13%;
-        bottom: 10vh;
+        bottom: 7vh;
     }
 }
 
@@ -84,8 +87,8 @@ header {
 #home div.form {
     position: absolute;
 
-    bottom:-60vh;
-    left: -50vh;
+    bottom:-50vh;
+    left: -60vh;
     
     height: 90vh;
     width: 90vh;
@@ -94,14 +97,16 @@ header {
     
     box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.625);
 
-    overflow: hidden;
+overflow: hidden;
 
     z-index: 1;
 }
 #home div.form .btns {
     position: absolute;
-    right: 30%;
-    height: 100%;
+    right: 22%;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 86%;
     width: 10px;
     background-color: aliceblue;
 
@@ -112,12 +117,12 @@ header {
 }
 @media screen and (min-height: 774px) {
     #home div.form .btns {
-        right: 35%;
+        right: 22%;
     }
 }
 #home div.form a.form-link {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 45px;
 
     font-size: 2em;
     transform: scale(3.5) rotate(-8deg);
@@ -147,7 +152,7 @@ header {
 #home div.btn-contato a img {
 }
 
-/* BOTÃO - SAIBA MAIS */
+/* BOTÃO - BOLA SAIBA MAIS */
 #home .bola-btn {
     position: absolute;
     bottom: -50vh;
@@ -187,9 +192,13 @@ header {
 
     z-index: 2;
 }
+
+/*
+    #SMDIV - Botão para descer a tela
+*/
 #home .smdiv {
     position: absolute;
-    bottom: -63vh;
+    bottom: -60vh;
     height: 300px;
     width: 100%;
     background-color: orange;
@@ -199,12 +208,16 @@ header {
 #home .smdiv p {
     position: absolute;
     left: 50%;
-    bottom: 3.1vh;
+    transform: translateX(-50%);
+    bottom: 7.1vh;
+    background-color: transparent;
 
     font-family: 'Rabisco';
     font-size: 1.5em;
     text-align: center;
     text-transform: uppercase;
+
+    z-index: 4;
 }
 #home .smdiv p span {
     font-size: 2.5em;
@@ -216,19 +229,23 @@ header {
 
 #iemol {
     background-image: linear-gradient(to bottom, orange, transparent);
+    width: 100vw;
+    padding-top: 5vh;
 }
 #iemol .esp {
     width: 100%;
-    margin-bottom: 3vh;
-}
-#iemol .esp:first-child {
-    padding-top: 5vh;
+    margin: 15px 0;
+
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
 }
 #iemol .esp:last-child {
     margin-bottom: 0;
 }
 #iemol .esp h3 {
     text-align: center;
+    margin-top: 15px;
     margin-bottom: 15px;
 
     font-size: 2em;
@@ -239,11 +256,35 @@ header {
     color: white;
     text-shadow: 0px 0px 3px black;
 }
+#iemol .esp .content {
+    display: none;
+}
+
 #iemol .esp img {
     display: block;
     width: 375px;
     margin: auto;
     border-radius: 20px;
+    
+
+    transition: 1s;
+}
+
+#iemol .exib {
+    width: 100%;
+    height: 70px;
+    background-color: orange;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    cursor: pointer;
+}
+#iemol .exib span {
+    transform: scale(2);
+
+    z-index: 199;
 }
 
 /*

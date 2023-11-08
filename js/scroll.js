@@ -19,3 +19,13 @@ $("#smdiv").click(function() {
         scrollTop: $("#iemol").offset().top
     }, 1500);
 })
+
+$("#berc").click(function() {
+    $("#bercTxt").fadeToggle();
+})
+$("#mater").click(function() {
+    $("#materTxt").fadeToggle();
+})
+$("#fund").click(function() {
+    $("#fundTxt").fadeToggle();
+})
