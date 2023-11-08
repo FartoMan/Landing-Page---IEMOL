@@ -298,23 +298,36 @@ overflow: hidden;
     BOTÃO PARA O FORMULÁRIO entre sessões
 */
 
-#btn-form {
-    background-color: #04A7E8;
-    height: 100px;
+main > .btn {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
-    border-radius: 20px;
-    margin: 20px 0;
-
+main > .btn > .btnEemC {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    width: 230px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #04A7E8;
+
+    margin-bottom: 15px;
 }
-#btn-form a {
+main > .btn  > .btnEemC a {
     text-decoration: none;
-    color: blue;
-    font-family: 'Rabisco';
-    font-size: 2em;
-    text-shadow: 0 0 2px white;
+    color: white;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+
+    transition: all .2s ease-in-out;
+}
+main > .btn  > .btnEemC:hover a {
+    transform: scale(1.1);
 }
 
 /*
@@ -365,13 +378,14 @@ overflow: hidden;
 
 #onde {
     margin-top: 30px;
-    height: 680px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #onde .mapa {
-    height: 80%;
     background-color: orange;
-    padding: 15px 0;
-    margin: auto;
+    padding: 25px 0;
     border-radius: 20px;
 }
 #onde .mapa .endereco {
@@ -391,4 +405,133 @@ overflow: hidden;
     box-shadow: 3px 0 5px black;
     
     overflow: hidden;
+}
+
+/*
+    Footer
+*/
+
+footer {
+    width: 100%;
+    background-color: #04A7E8;
+}
+footer .content {
+    width: 340px;
+    margin: auto;
+    text-align: center;
+
+    color: white;
+}
+footer .content img.logo {
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+}
+footer .txtCamp {
+    margin-top: 20px;
+}
+footer .txtCamp h2 {
+    text-align: center;
+    font-family: 'Play-Sans', cursive;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+footer .btns {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer .btnEemC {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 180px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 20px;
+
+    margin-bottom: 15px;
+}
+footer .btnEemC a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+
+    transition: all .2s ease-in-out;
+}
+footer .btnEemC:hover a {
+    transform: scale(1.1);
+}
+footer .redes {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .redes .btn {
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+footer .redes .btn:first-child {
+    margin-right: 15px;
+}
+footer .redes .btn:last-child {
+    margin-left: 15px;
+}
+footer .redes img {
+    width: 32px;
+    transform: scale(1);
+    margin-top: 3px;
+
+    transition: all .2s ease-in-out;
+}
+footer .redes .btn:hover img {
+    transform: scale(1.45);
+}
+footer .infos {
+    display: flex;
+    flex-direction: column;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.15em;
+
+    margin-bottom: 25px;
+}
+footer .infos h4 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+footer .infos p {
+    margin-bottom: 10px;
+}
+
+footer .rights {
+    
+    border-top: 5px double rgba(255, 255, 255, 0.356);
+    
+    font-family: Arial, Helvetica, sans-serif;
+    
+    padding-bottom: 40px;
+}
+footer .rights p:first-child {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+footer .rights p:last-child a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
