@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IEMOL - Matrículas & Rematrículas</title>
-    <link rel="stylesheet" href="estilos/style2.css">
+    <link rel="stylesheet" href="estilos/style2.css" media="all">
+    <link rel="stylesheet" href="estilos/stylesmq.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
@@ -16,7 +17,7 @@
         <section id="home">
             <div class="camp">
                 <h1>Matrículas <span>2024</span><br> & Rematrículas</h1>
-                <h2>Somos IEMOL de coração!</h2>
+                <h2>Somos <span>IEMOL</span> de coração!</h2>
             </div>
             <picture>
                 <source media="(max-height: 774px)" srcset="imagens/menina-coracao-menor.png">
@@ -37,15 +38,15 @@
                 </div>
             </div>
             <!-- Botão (?) Saiba Mais - Desce para a próxima sessão -->
-            <div class="bola-btn" id="btn-mais">
+            <div class="bola-btn">
                 
-                <p value="Saiba mais">?</p>
+                <p value="Saiba mais" id="btn-mais">?</p>
                 <div class="img-porta">
                     <img src="imagens/porta-iemol.png" alt="Porta de entrada do IEMOL - Instituto Educacional Monteiro Lobato" srcset="">
                 </div>
             </div>
             <div class="smdiv" id="smdiv">
-                <p>
+                <p id="smdiv">
                     <span class="material-symbols-outlined">keyboard_double_arrow_down</span><br>
                     Saiba mais...
                 </p>
@@ -56,7 +57,6 @@
             <article class="esp berc" id="berc">
                 <h3>Educação Infantil</h3>
                 <div class="content" id="bercTxt">
-                    <img src="imagens/bercario.jpg" alt="Crianças no berçário com monitores e professores.">
                     <p>Aqui no IEMOL temos um berçário tranquilo e seguro para o seu bebê, além de uma equipe amorosa e atenta as necessidades individuais de cada um. Nos preocupamos com uma rotina de alimentação, higiene e sono. Fazemos também atividades educativas e divertidas para estimular o desenvolvimento dos pequenos. 
                     </p>
                 </div>
@@ -100,34 +100,38 @@
                     Entrar em contato
                 </a>
             </div>
+            <div class="txt">
+                <p>Em 2024, continue ou inicie a trajetória escolar do seu filho com a gente!</p>
+            </div>
         </div>
         
 
         <section id="equipe">
-            <article class="txt">
-                <p>Em 2024, continue ou inicie a trajetória escolar do seu filho com a gente!</p>
-            </article>
             <div class="imgs">
                 <div id="btnEq1">
                     <h3>Direção</br>Coordenação </h3>
                     <div class="content" id="eqContent1">
-                        <h3>Diretora Carol</h3>
-                        <img src="imagens/dirCarol.jpg" alt="Diretora Carol do IEMOL - Instituto Educacional Monteiro Lobato">
-                        <p>Meu nome é Carolina e estou na direção há 14 anos. Durante esse período venho trabalhando para que a escola cresça com muito sucesso e competência. Investimos em uma equipe profissional competente, na excelência no atendimento, estrutura e, principalmente, no ensino humano e de qualidade.</p>
-                        <p>Formamos cidadãos preparados para o mundo, protagonistas da sua própria trajetória.</p>
-                        <p>Hoje a escola representa para mim a realização de um grande sonho.</p>
-                        <h3>Coordenadora Roberta</h3>
-                        <img src="imagens/coordRoberta.jpg" alt="Coordenadora Roberta do IEMOL - Instituto Educacional Monteiro Lobato">
-                        <p>Sou a Roberta Ronise, coordenadora pedagógica do IEMOL. É com muito prazer que acompanho o processo de ensino-aprendizagem aqui na escola para que possamos encontrar resultados incríveis, proporcionando educação de qualidade para nossos alunos.</p>
-                        <p>Acredito que meu papel seja articular para que os professores trabalhem coletivamente as propostas curriculares, ajudar o professor a ser reflexivo e crítico em sua prática e aliar todos os personagens da escola para que todos cumpram suas funções com zelo.</p>
-                        <p>É necessário organização, envolvimento, clareza e que todos tenham o mesmo interesse em comum, pois tal unidade trará melhores resultados para nossos alunos.</p>
+                        <div class="carol">
+                            <h3>Diretora Carol</h3>
+                            <img src="imagens/dirCarol.jpg" alt="Diretora Carol do IEMOL - Instituto Educacional Monteiro Lobato">
+                            <p>Meu nome é Carolina e estou na direção há 14 anos. Durante esse período venho trabalhando para que a escola cresça com muito sucesso e competência. Investimos em uma equipe profissional competente, na excelência no atendimento, estrutura e, principalmente, no ensino humano e de qualidade.</p>
+                            <p>Formamos cidadãos preparados para o mundo, protagonistas da sua própria trajetória.</p>
+                            <p>Hoje a escola representa para mim a realização de um grande sonho.</p>
+                        </div>
+                        <div class="roberta">
+                            <h3>Coordenadora Roberta</h3>
+                            <img src="imagens/coordRoberta.jpg" alt="Coordenadora Roberta do IEMOL - Instituto Educacional Monteiro Lobato">
+                            <p>Sou a Roberta Ronise, coordenadora pedagógica do IEMOL. É com muito prazer que acompanho o processo de ensino-aprendizagem aqui na escola para que possamos encontrar resultados incríveis, proporcionando educação de qualidade para nossos alunos.</p>
+                            <p>Acredito que meu papel seja articular para que os professores trabalhem coletivamente as propostas curriculares, ajudar o professor a ser reflexivo e crítico em sua prática e aliar todos os personagens da escola para que todos cumpram suas funções com zelo.</p>
+                            <p>É necessário organização, envolvimento, clareza e que todos tenham o mesmo interesse em comum, pois tal unidade trará melhores resultados para nossos alunos.</p>
+                        </div>
                     </div>
                     <img src="imagens/diretoras1.jpg" alt="Direção do IEMOL - Instituto Educacional Monteiro Lobato" id="btnDir">
                 </div>
                 <div id="btnEq2">
                     <h3>Professores</h3>
                     <div class="content" id="eqContent2">
-                        <p>no IEMOL temos uma equipe muito competente de professores preocupados não apenas em transmitir conhecimentos, mas determinados em ser a base da formação crítica dos seus alunos mediante a sociedade.</p>
+                        <p>No IEMOL temos uma equipe muito competente de professores preocupados não apenas em transmitir conhecimentos, mas determinados em ser a base da formação crítica dos seus alunos mediante a sociedade.</p>
                         <p>Isso só é possível devido ao vínculo de confiança e afeto entre professor e aluno. É essa relação que desenvolve as habilidades dos alunos e os tornam seres intelectualmente autônomos.</p>
                     </div>
                     <img src="imagens/profs.jpg" alt="Professoras do IEMOL à mesa- Instituto Educacional Monteiro Lobato" id="btnProfs">
